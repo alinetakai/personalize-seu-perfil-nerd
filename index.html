@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Personalize seu Perfil Nerd</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>🎮 Personalize seu Perfil Nerd</h2>
+
+  <form id="perfilForm">
+    <!-- Checkbox -->
+    <div class="grupo">
+      <label><strong>Seus interesses favoritos:</strong></label>
+      <label><input type="checkbox" name="interesses" value="Games"> Games</label>
+      <label><input type="checkbox" name="interesses" value="Animes"> Animes</label>
+      <label><input type="checkbox" name="interesses" value="RPG"> RPG</label>
+      <label><input type="checkbox" name="interesses" value="Tecnologia"> Tecnologia</label>
+    </div>
+
+    <!-- Radio -->
+    <div class="grupo">
+      <label><strong>Escolha sua casa favorita:</strong></label>
+      <label><input type="radio" name="casa" value="Grifinória"> Grifinória</label>
+      <label><input type="radio" name="casa" value="Sonserina"> Sonserina</label>
+      <label><input type="radio" name="casa" value="Corvinal"> Corvinal</label>
+      <label><input type="radio" name="casa" value="Lufa-Lufa"> Lufa-Lufa</label>
+    </div>
+
+    <!-- Color -->
+    <div class="grupo">
+      <label><strong>Escolha a cor do seu perfil:</strong></label>
+      <input type="color" name="cor" value="#4a00e0">
+    </div>
+
+    <input type="submit" value="Salvar preferências">
+  </form>
+
+  <div id="resultado" style="display: none;"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
